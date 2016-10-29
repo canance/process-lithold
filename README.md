@@ -158,6 +158,8 @@ RELATED LINKS
 - Add support for other archive types
 - Add support for SSH private keys
 
+## Video Demonstration
+http://www.youtube.com/watch?v=cLe5BwcVXS4
 
 
 
