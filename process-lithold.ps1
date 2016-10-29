@@ -101,7 +101,7 @@ ForEach-Object{
     $relative_path = $_ | Select-Object -Property PSPath | Resolve-Path -Relative
     $relative_path = $relative_path.TrimStart('.\')
     Write-Output "[*INFO] Found --> $($_.FullName)"
-    Start-Process $7zPath -ArgumentList 'a','-ttar', $Archive_Path, $relative_path -Wait -NoNewWindow -WorkingDirectory $root 
+    Start-Process $7zPath -ArgumentList 'a','-ttar', $Archive_Path, $relative_path -Wait -NoNewWindow -WorkingDirectory $root -RedirectStandardOutput nul 
 }
 
 # restore cwd
